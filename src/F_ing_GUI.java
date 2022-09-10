@@ -41,6 +41,8 @@ public class F_ing_GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDialog1 = new javax.swing.JDialog();
+        jProgressBar1 = new javax.swing.JProgressBar();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         Universo = new javax.swing.JLabel();
@@ -91,6 +93,23 @@ public class F_ing_GUI extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenuItemCARGAR = new javax.swing.JMenuItem();
         jMenuItemGUARDAR = new javax.swing.JMenuItem();
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog1Layout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34))
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addGap(155, 155, 155)
+                .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(121, Short.MAX_VALUE))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -404,6 +423,7 @@ public class F_ing_GUI extends javax.swing.JFrame {
 
     private void jMenuItemGUARDARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGUARDARActionPerformed
         leertodo();
+        Hilo.start();
         cargarComboboxSeresEliminar();
         cargarComboboxSer();
         cargarComboboxUniversoModis();
@@ -614,6 +634,7 @@ public class F_ing_GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButtonEliminar;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBoxModificarUniverso;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -638,6 +659,7 @@ public class F_ing_GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTabbedPane jTabbedPane1;
